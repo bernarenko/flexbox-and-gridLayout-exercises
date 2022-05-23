@@ -68,10 +68,11 @@ h1 {
 
 .grid1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 780px;
-    margin: 0 auto;
     gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 10px;
 }
 
 .grid1 > div:nth-child(n + 4){
@@ -87,3 +88,18 @@ h1 {
     display: block;
 }
 
+@media (max-width: 600px){
+    .grid1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid1 > div:nth-child(n + 4){
+        display: block;
+
+    }
+    .grid1 > div.anuncio{
+        grid-column: auto;
+        grid-row: auto;
+        order: -1;
+
+    }
+}
