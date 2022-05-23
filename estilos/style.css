@@ -6,6 +6,10 @@ body, ul, li, p {
     padding: 0px;
 }
 
+body {
+    margin-bottom: 100px;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -61,4 +65,25 @@ h1 {
 }
 
 /* CSS Grid Layout */
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 780px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.grid1 > div:nth-child(n + 4){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+}
+
+.grid1 > div.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    display: block;
+}
 
