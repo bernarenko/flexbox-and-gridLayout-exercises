@@ -11,6 +11,11 @@ a {
     color: white;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .header{
     background-color: black;
     align-items: center;
