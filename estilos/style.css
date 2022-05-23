@@ -35,3 +35,11 @@ a {
     padding: 10px;
     background-color: tomato;
 }
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* CSS Flexbox*/
+
