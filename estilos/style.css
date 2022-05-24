@@ -136,3 +136,35 @@ h1 {
 
 /* Grid layout 3*/
 
+.grid3{
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+
+.gridItem:nth-child(1) {
+    grid-row: 1 /  3;
+}
+
+.gridItem {
+    display: grid;
+}
+
+.gridItem img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: end;
+}
+
+.gridItem p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: whitesmoke;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+}
