@@ -107,3 +107,29 @@ h1 {
 
 /* grid layout 2 */
 
+.grid2 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 200px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.sidebar > div {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid2{
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        display: flex;
+        overflow: scroll;
+    }
+    .sidebar > div {
+        flex: 1 0 200px;
+        margin: 0 10px;
+    }
+}
